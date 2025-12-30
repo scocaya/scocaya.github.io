@@ -1,4 +1,107 @@
-<p>10/28/25: decided to commit to making a website! made the first edits, and am in the process of looking for a domain. need to do that and get on the ut webring. also need to make a few more pages. wanna do a guestbook and doodle pag n stuff. </p>
-<p>11/20/25: bought a domain instead of studying for bio and chem. we stay winning. will work on this more after midterms/on break i think. yay!</p>
-<p>12/25/25: just adding some bullshit and changing up the themeing.</p>
-<a href="index.html">back to home</a>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>otocolob.us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+            margin: 0;
+            padding-left: 5em;
+            padding-right: 5em;
+            padding-top: 5em;
+        }
+
+        .layout {
+            display: flex;
+        }
+
+        aside {
+            padding: 10px;
+        }
+
+        /* the side thingy */
+        aside ul {
+            list-style: none;
+            margin: 0;
+            padding-left: 18px;
+        }
+
+        aside li {
+            position: relative;
+            padding-left: 14px;
+            /* margin: 3px 0; */
+        }
+
+        aside li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            border-left: 1px solid black;
+        }
+
+        aside li::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.9em;
+            width: 12px;
+            border-top: 1px solid black;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="layout">
+            <aside>
+                <h2>site map</h2>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li>
+                        <small>probably important</small>
+                        <ul>
+                            <li><a href="logs">site logs</a></li>
+                            <li><a href="guestbook">guestbook</a></li>
+                        </ul>
+                    <li><small>the fun bits</small>
+                        <ul>
+                            <li><a href="funny">funniest things ever</a></li>
+                            <li><a href="gay">queerness</a></li>
+                        </ul>
+                    </li>
+            </aside>
+
+        <main>
+            <h1>logs</h1>
+            <p>12/30/25: uhm okay so i... mightve deleted <big>everything....</big> <small>whoops.... hehe</small> its ok tho we lwk ball. going to make the bare bones of everything before themeing. so yay.
+            </p>
+            <p>12/25/25: just adding some bullshit and changing up the themeing.</p>
+            <p>11/20/25: bought a domain instead of studying for bio and chem. we stay winning. will work on this more
+                after midterms/on break i think. yay!</p>
+            <p>10/28/25: decided to commit to making a website! made the first edits, and am in the process of looking
+                for a domain. need to do that and get on the ut webring. also need to make a few more pages. wanna do a
+                guestbook and doodle pag n stuff.</p>
+        </main>
+    </div>
+
+    <footer>
+        <p>© otocolob.us<br>
+            made with slow blinks and love</p>
+    </footer>
+
+</body>
+
+</html>
