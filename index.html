@@ -5,12 +5,17 @@
   <meta charset="UTF-8" />
   <title>otocolob.us</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="sidebar.css">
+
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel" src="sidebar.jsx"></script>
+
   <style>
     body {
       margin: 0;
-      padding-left: 5em;
-      padding-right: 5em;
-      padding-top: 5em;
+      padding: 3em;
     }
 
     .layout {
@@ -21,37 +26,6 @@
       padding: 10px;
     }
 
-  /* the side thingy */
-    aside ul {
-      list-style: none;
-      margin: 0;
-      padding-left: 18px;
-    }
-
-    aside li {
-      position: relative;
-      padding-left: 14px;
-      /* margin: 3px 0; */
-    }
-
-    aside li::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      border-left: 1px solid black;
-    }
-
-    aside li::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0.9em;
-      width: 12px;
-      border-top: 1px solid black;
-    }
-
     main {
       flex: 1;
       padding: 20px;
@@ -60,39 +34,31 @@
     footer {
       text-align: center;
     }
+
+    h1,
+    h2,
+    h3 {
+      font-family: monospace;
+    }
   </style>
 </head>
 
 <body>
 
   <div class="layout">
-   <aside>
-                <h2>site map</h2>
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li>
-                        <small>probably important</small>
-                        <ul>
-                            <li><a href="logs.html">site logs</a></li>
-                            <li><a href="guestbook.html">guestbook</a></li>
-                        </ul>
-                    <li><small>the fun bits</small>
-                        <ul>
-                            <li><a href="funny.html">funniest things ever</a></li>
-                            <li><a href="gay.html">queerness</a></li>
-                        </ul>
-                    </li>
-            </aside>
+    <div id="sidebar-root"></div>
 
     <main>
       <h1>otocolob.us</h1>
       <p><big>hi. my name is scott <ruby>
             🎧 <rt>headphones</rt></ruby></big>. i'm a freshman bme student at <a
           href="https://en.wikipedia.org/wiki/University_of_Texas_at_Austin">ut austin</a>. i use <i>he him his</i>
-        <small>+ <a href="#">other</a>.</small></p>
+        <small>+ <a href="#">other</a>.</small>
+      </p>
       <p>if you've been on this site before, you might be like oh my <i>god</i> scott everything is <big>GONE.</big>
         don't you worry. everything is okay. i just wanted to start from scratch hehe. do not worry my
         headphonians.</small></p>
+      <img src="https://visitor-badge.feriirawann.repl.co?username=scocaya&repo=1100793127" alt="Visitor Badge" />
     </main>
   </div>
 

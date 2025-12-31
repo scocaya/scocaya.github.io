@@ -1,0 +1,41 @@
+/* the side thingy */
+aside {
+    background: lightgray;
+    height: 100%;
+    border-width: 3px 4px 3px 5px;
+  border-radius:95% 4% 92% 5%/4% 95% 3%;
+  border: 2px solid black;
+}
+aside ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 18px;
+
+
+}
+
+aside li {
+    position: relative;
+    padding-left: 14px;
+    /* margin: 3px 0; */
+}
+
+aside li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-left: 3px double black;
+    
+}
+
+aside li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.9em;
+    width: 12px;
+    border-top: 1px solid black;
+}
+
