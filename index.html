@@ -126,10 +126,15 @@
             src: url(fonts/permanent-daylight/PERMANENTDAYLIGHT.TTF);
         }
 
+    @font-face {
+      font-family: dec_terminal_modern;
+      src: url(fonts/dec_terminal_modern/_decterm.ttf);
+    }
+
     body {
       margin: 0;
       min-height: 100vh;
-      font-family: permanent-daylight;
+      font-family: dec_terminal_modern;
       transition: background-color 0.2s ease;
     }
 
@@ -149,7 +154,29 @@
 
     a:visited {
       color: slategray;
+    } 
+
+    p {
+      font-size: 1.25em;
+      font-family: dec_terminal_modern;
     }
+
+    p big {
+      font-size: 1.5em;
+      word-spacing: 2px;
+            font-family: permanent-daylight;
+    }
+
+    p small {
+      font-size: 0.75em;
+      font-family: dec_terminal_modern;
+    }
+
+    footer p, h1, h2, h3 {
+      word-spacing: 2px;
+      font-family: permanent-daylight !important;
+    }
+
   </style>
 </head>
 
