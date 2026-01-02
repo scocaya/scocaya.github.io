@@ -1,18 +1,17 @@
 function Sidebar() {
   return (
     <aside>
-      <img
+      {/* <img
         src="images/plants1.png"
         alt="plants"
         style={{
           width: "14em",
-          marginBottom: "-2em",
-          marginTop: "-1.3em",
+          marginTop: "-1.8em",
           marginLeft: "-0.6em",
-          transform: "rotate(-4deg)"
+
         }}
-      />
-      <h2>site map</h2>
+      /> */}
+      <h2>navigation</h2>
       <ul>
         <li><a href="index.html">home</a></li>
 
@@ -27,9 +26,9 @@ function Sidebar() {
         <li>
           <small>the fun bits</small>
           <ul>
-            <li><a href="funny.html">funniest things ever</a></li>
+            <li><a href="funny.html">funniest things</a></li>
             <li><a href="gay.html">queerness</a></li>
-            <li><a href="associations.html">associate me with:</a></li>
+            <li><a href="associations.html">associate me w/</a></li>
           </ul>
         </li>
       </ul>
@@ -40,3 +39,9 @@ function Sidebar() {
 ReactDOM
   .createRoot(document.getElementById("sidebar-root"))
   .render(<Sidebar />);
+
+const sidebarContainer = document.getElementById("sidebar-root");
+
+if (sidebarContainer) {
+  ReactDOM.createRoot(sidebarContainer).render(<Sidebar />);
+}

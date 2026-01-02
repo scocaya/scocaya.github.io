@@ -6,6 +6,11 @@
     <title>otocolob.us</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" src="CRT.jsx"></script>
+    <link rel="stylesheet" href="crt.css">
 
     <style>
         :root {
@@ -19,34 +24,7 @@
             --sunlight: #f3f4f6;
         }
 
-        /* CRT OVERLAY I DID NOT MAKE THIS SHOUTOUT REDDIT GUY 
-        honestly i barely understand this so kudos */
-        &::before,
-        &::after {
-            content: "";
-            position: fixed;
-            height: 100%;
-            width: 100%;
-            left: 0;
-            top: 0;
-            z-index: 999;
-            pointer-events: none;
-            opacity: 0.18;
-            mix-blend-mode: overlay;
-        }
-
-        &::before {
-            background: repeating-linear-gradient(var(--crt-red) 0px,
-                    var(--crt-green) 2px,
-                    var(--crt-blue) 4px);
-        }
-
-        &::after {
-            background: repeating-linear-gradient(90deg,
-                    var(--crt-red) 1px,
-                    var(--crt-green) 2px,
-                    var(--crt-blue) 3px);
-        }
+        
 
         /* flicker anim i am so proud of this be proud of me */
         @keyframes flicker {
@@ -207,6 +185,7 @@
 </head>
 
 <body class="bg-lightgray">
+    <div id="crt-root"></div>
     <div class="container">
 
         <!-- please -->

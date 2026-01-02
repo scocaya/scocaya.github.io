@@ -1,0 +1,47 @@
+:root {
+  --crt-red: rgb(218, 49, 49);
+  --crt-green: rgb(112, 159, 115);
+  --crt-blue: rgb(40, 129, 206);
+}
+
+.crt-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 9999; 
+  pointer-events: none;
+}
+
+.crt-before,
+.crt-after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transform: translateZ(0);
+  pointer-events: none;
+  opacity: 0.12; 
+  mix-blend-mode: overlay;
+}
+
+.crt-before {
+  background: repeating-linear-gradient(
+    var(--crt-red) 0px,
+    var(--crt-green) 2px,
+    var(--crt-blue) 4px
+  );
+}
+
+.crt-after {
+  background: repeating-linear-gradient(
+    90deg,
+    var(--crt-red) 1px,
+    var(--crt-green) 2px,
+    var(--crt-blue) 3px
+  );
+}
