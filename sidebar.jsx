@@ -29,6 +29,7 @@ function Sidebar() {
           <ul>
             <li><a href="funny.html">funniest things ever</a></li>
             <li><a href="gay.html">queerness</a></li>
+            <li><a href="associations.html">associate me with:</a></li>
           </ul>
         </li>
       </ul>
